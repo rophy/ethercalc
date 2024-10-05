@@ -29,6 +29,9 @@ vm: all
 expire: all
 	node app.js --expire 10 $(ETHERCALC_ARGS)
 
+docker:
+	docker build -t ethercalc .
+
 all: depends $(JS_FILES)
 
 $(JS_FILES): %.js: src/%.ls
@@ -76,4 +79,4 @@ clean ::
 	@-rm $(JS_FILES)
 
 .SUFFIXES: .js .css .sass .ls
-.PHONY: run vm expire all clean depends
+.PHONY: run vm expire all clean depends docker
