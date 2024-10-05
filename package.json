@@ -31,8 +31,18 @@
     "style-loader": "^0.8.2",
     "stylus-loader": "^3.0.2",
     "superagent": "^0.21.0",
+    "uglify-js": "2.6.4",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
+  },
+  "overrides": {
+    "engine.io-client": "1.8.4",
+    "minimist": "0.2.4",
+    "morgan": "1.10.0",
+    "socket.io-parser": "3.3.4",
+    "uglify-js": "2.6.4",
+    "xmlhttprequest": "1.7.0",
+    "xmlhttprequest-ssl": "1.6.3"
   },
   "subdomain": "ethercalc",
   "bin": {
