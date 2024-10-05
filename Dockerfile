@@ -1,9 +1,13 @@
-FROM node:4.8
+FROM node:18.20.4-bullseye
 
-RUN useradd ethercalc --create-home
-RUN npm install -g ethercalc pm2 || true
-RUN rm -rf /usr/local/lib/node_modules/ethercalc/node_modules/nodemailer/ || true
+ADD https://github.com/krallin/tini/releases/download/v0.19.0/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "--"]
 
+RUN useradd ethercalc -m -d /app
+WORKDIR /app
 USER ethercalc
+COPY --chown=ethercalc . .
+RUN npm install -c --omit=dev
 EXPOSE 8000
-CMD ["sh", "-c", "REDIS_HOST=$REDIS_PORT_6379_TCP_ADDR REDIS_PORT=$REDIS_PORT_6379_TCP_PORT pm2 start -x `which ethercalc` -- --cors && pm2 logs"]
+CMD ["node", "bin/ethercalc"]
