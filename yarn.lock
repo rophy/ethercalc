@@ -1694,7 +1694,7 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-livescript-loader@^0.1.5:
+livescript-loader@^0.1.6:
   version "0.1.6"
   resolved "https://registry.npmjs.org/livescript-loader/-/livescript-loader-0.1.6.tgz"
   integrity sha512-R3RRO8v+PYtDl++ex3+yek2IjYYX22+U18V8AXDDJh7g9+JBvVM4diwYu/11/N0mswBC8hVM3mZ1CNGcAE5NPQ==
@@ -1702,14 +1702,15 @@ livescript-loader@^0.1.5:
     livescript "^1.4.0"
     loader-utils "0.2.x"
 
-livescript@^1.4.0, livescript@1.5.x:
-  version "1.5.0"
-  resolved "https://registry.npmjs.org/livescript/-/livescript-1.5.0.tgz"
-  integrity sha512-ng8B3l2Ovk71QD7n9B8Oc4kskPL4gnQLOXEPpyqUXI0lcN/FiDO9e9LnoxrIyvHPuNPj71qlFO9mvSfft3byJg==
+livescript@^1.4.0, livescript@1.6:
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/livescript/-/livescript-1.6.0.tgz"
+  integrity sha512-x5q+sx1/rOPmx6Fp04gjUqRr4XL5djqXPctu6FPBktm7d7gfRrKkYj9PhMeKT8OKE1bfL92njzAwaN8JCj8kRQ==
   dependencies:
-    optionator "~0.8.1"
+    optionator "~0.8.2"
     prelude-ls "~1.1.2"
-    source-map "^0.5.6"
+    source-map "=0.6.1"
+    source-map-support "=0.5.6"
 
 loader-utils@^0.2.11, loader-utils@^0.2.5, loader-utils@~0.2.2, loader-utils@0.2.x:
   version "0.2.17"
@@ -2100,7 +2101,7 @@ optimist@~0.3.5:
   dependencies:
     wordwrap "~0.0.2"
 
-optionator@~0.8.1:
+optionator@~0.8.2:
   version "0.8.2"
   resolved "https://registry.npmjs.org/optionator/-/optionator-0.8.2.tgz"
   integrity sha512-oCOQ8AIC2ciLy/sE2ehafRBleBgDLvzGhBRRev87sP7ovnbvQfqpc3XFI0DhHey2OfVoNV91W+GPC6B3540/5Q==
@@ -2736,6 +2737,14 @@ source-list-map@~0.1.7:
   resolved "https://registry.npmjs.org/source-list-map/-/source-list-map-0.1.8.tgz"
   integrity sha512-cabwdhnSNf/tTDMh/DXZXlkeQLvdYT5xfGYBohqHG7wb3bBQrQlHQNWM9NWSOboXXK1zgwz6JzS5e4hZq9vxMw==
 
+source-map-support@=0.5.6:
+  version "0.5.6"
+  resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.6.tgz"
+  integrity sha512-N4KXEz7jcKqPf2b2vZF11lQIz9W5ZMuUcIOGj243lduidkf2fjkVKJS9vNxVWn3u/uxX38AcE8U9nnH9FPcq+g==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
 source-map@^0.4.2:
   version "0.4.4"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz"
@@ -2743,15 +2752,20 @@ source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.6:
-  version "0.5.7"
-  resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
-  integrity sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ==
+source-map@^0.6.0:
+  version "0.6.1"
+  resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 source-map@^0.7.3:
   version "0.7.4"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.7.4.tgz"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
+
+source-map@=0.6.1:
+  version "0.6.1"
+  resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 source-map@~0.1.38:
   version "0.1.43"

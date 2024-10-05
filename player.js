@@ -51,12 +51,12 @@
                     return '';
                   }
                 }()));
-                if (/^(?:www\.)?ethercalc\.(?:org|com)$/.exec(location.host)) {
+                if (/^(?:www\.)?ethercalc\.net$/.exec(location.host)) {
                   return $(function(){
                     return $('<a />', {
                       id: "restore",
                       target: "_blank",
-                      href: "https://ethercalc.org/log/?" + SocialCalc._room,
+                      href: "https://ethercalc.net/log/?" + SocialCalc._room,
                       title: "View & Restore Backups"
                     }).text("↻").appendTo('body');
                   });
